@@ -42,7 +42,7 @@ function condCheck(array) {
 
 function validityFalse(arr0, arr1, arr2) {
     let length = arr0.length
-    for (n in arguments) {
+    for (let n in arguments) {
         if (arguments[n].length !== length) return true
         if (arguments[n].length < 3 || arguments[n].some(num => typeof num !== 'number')) {
             return true
